@@ -1,12 +1,17 @@
-•  ACME Novara : anno accademico 2023-2024
-•  Corso: WebDesign
-•  Studente: Claudia Rebasti 
-•  Docente: Matteo Baccan
+# sito web portfolio di Claudia Rebasti 
+• Acme Novara: Anno Accademico 2023-2024
+• Corso: webdesign
+• Studente: Claudia Rebasti 
+• Matricola: 945 
+• Docente: Matteo Baccan
 
-Beautician si occupa delle unghie e del viso, si prendono cura delle persone che hanno bisogno di ristrutturazione.
-Sul nostro profilo di instagram è possibile trovare le informazioni come funziona l’interno del negozio. 
+# Scopo del progetto
+Lo scopo di questo progetto è di realizzare dei siti web realizzato su HTML5 e CSS.
+
+# elementi principali 
+Beautician si occupa di fare ricostruzione unghie, pulizia del viso. 
 Per maggiori informazioni è possibile contattarci alle seguenti voci:
 •  al nostro indirizzo mail: beautician@gmail.com
-•  al numero: +39 5095823014
+•  al numero: +39 3350423455
 •  puoi anche trovarci a Milano, in via Napoleone n°11
 
