@@ -1,4 +1,4 @@
-# sito web portfolio di Claudia Rebasti 
+# Sito web portfolio di Claudia Rebasti 
 • Acme Novara: Anno Accademico 2023-2024
 • Corso: webdesign
 • Studente: Claudia Rebasti 
