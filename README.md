@@ -8,7 +8,7 @@
 # Scopo del progetto
 Lo scopo di questo progetto è di realizzare dei siti web realizzato su HTML5 e CSS.
 
-# elementi principali 
+# Elementi principali 
 Beautician si occupa di fare ricostruzione unghie, pulizia del viso. 
 Per maggiori informazioni è possibile contattarci alle seguenti voci:
 •  al nostro indirizzo mail: beautician@gmail.com
