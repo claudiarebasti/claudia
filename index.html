@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-<!-- ChatGPT: mi puoi creare un nav responsive in html5, con posizionamento fisso nel top della pagina e un'icona per l'apertura e chiusura del menu -->
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +13,7 @@
             left: 0;
             width: 100%;
             background-color: #333;
-            color: #00fff; 
+            color: #fff;
             z-index: 1000;
         }
 
@@ -28,12 +27,12 @@
             padding: 10px 20px;
         }
 
-        /* Navbar logo *// src="logomio.png"
+        /* Navbar logo */
         .navbar-logo a {
-            
             color: #fff;
             font-size: 24px;
             font-weight: bold;
+            text-decoration: none;
         }
 
         /* Navbar toggle */
@@ -46,7 +45,7 @@
             display: block;
             width: 20px;
             height: 2px;
-            white: #fff;
+            background-color: #fff;
             margin: 5px 0;
         }
 
@@ -65,29 +64,31 @@
         }
 
         .navbar-menu a {
-            color:
+            color: #fff;
             text-decoration: none;
         }
 
+        /* Section styling */
         #chisono {
-            background-color:white #f6b1b1;
             margin-top: 100px;
+            padding: 20px;
+            background-color: #f6b1b1;
         }
 
         #portfolio {
             margin-top: 10px;
+            padding: 20px;
         }
 
         footer {
             background-color: #333;
-            color: white #fff;
+            color: #fff;
             text-align: center;
             padding: 10px;
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            color: blue
         }
 
         /* Media queries */
@@ -105,7 +106,7 @@
                 top: 60px;
                 left: 0;
                 width: 100%;
-                background-color:sky blue #333;
+                background-color: #333;
                 padding: 10px 20px;
             }
 
@@ -124,7 +125,7 @@
 
             /* Navbar menu active */
             .navbar-menu.active {
-                display:
+                display: block;
             }
         }
     </style>
@@ -134,7 +135,7 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="#"><img src="logomio.png" width="100"></a>
+                <a href="#"><img src="logomio.png" width="100" alt="Logo"></a>
             </div>
             <div class="navbar-toggle">
                 <span></span>
@@ -153,16 +154,16 @@
     </nav>
 
     <div id="chisono">
-        <img src="fotomia.jpg" style="width:100px;">
-       </div> Ciao mi chiamo Claudia sono una Graphic Designer, frequento l'università acme di belle arti.
+        <img src="fotomia.jpg" style="width:100px;" alt="Foto di Claudia">
+        Ciao mi chiamo Claudia sono una Graphic Designer, frequento l'università ACME di Belle Arti.
     </div>
 
     <div id="portfolio">
         <div>
-            <img src="etichetta.jpg" style="width:100px;">
+            <img src="etichetta.jpg" style="width:100px;" alt="Etichetta della birra">
         </div>
         <div>
-            l'etichetta della birra l'ho realizzata su illustrator, l'ho creata per appiccicare su una bottiglia
+            L'etichetta della birra l'ho realizzata su Illustrator, l'ho creata per appiccicare su una bottiglia.
         </div>
     </div>
 
@@ -197,8 +198,7 @@
     </div>
 
     <footer>
-         color: white #fff
-        <p>&copy; Nome Cognome E-mail Numero di telefono </p>
+        <p>&copy; Nome Cognome E-mail Numero di telefono</p>
     </footer>
 
     <script>
