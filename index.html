@@ -209,6 +209,49 @@
             </div>
         </form>
     </div>
+        <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Mappa</title>
+    <style>
+        /* Aggiungi un po' di stile per la mappa */
+        #map {
+            height: 100vh; /* Rende la mappa a schermo intero */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>La Mia Mappa</h1>
+    <div id="map"></div>
+
+    <!-- Script per Google Maps API -->
+    <script async defer 
+        src="https://maps.googleapis.com/maps/api/js?key=LA_TUA_API_KEY&callback=initMap">
+    </script>
+
+    <script>
+        // Funzione per inizializzare la mappa
+        function initMap() {
+            // Crea una nuova mappa centrata su una posizione specifica
+            const posizione = { https://www.google.it/maps/place/Via+Costantino+Porta,+28100+Novara+NO/@45.4527343,8.6157908,17z/data=!4m6!3m5!1s0x47865a244b820c55:0xe4e1c7888cc22c40!8m2!3d45.4530053!4d8.6167564!16s%2Fg%2F1tf14rg3?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D }; // Novara, Italia
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: posizione
+            });
+
+            // Aggiungi un marker alla mappa
+            const marker = new google.maps.Marker({
+                position: posizione,
+                map: map
+            });
+        }
+    </script>
+</body>
+</html>
+
 
     <footer>
         <p>&copy; Nome Cognome E-mail Numero di telefono</p>
