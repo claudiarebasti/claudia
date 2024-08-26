@@ -185,46 +185,7 @@
                 <input type="text" name="nome" id="nome" class="form-control"
                     placeholder="Inserisci il tuo nome: ci aiuterà a ricordarci come ti chiami">
             </div>
-            <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Mappa</title>
-    <style>
-        /* Aggiungi un po' di stile per la mappa */
-        #map {
-            height: 100vh; /* Rende la mappa a schermo intero */
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <h1>La Mia Mappa</h1>
-    <div id="map"></div>
-
-    <!-- Script per Google Maps API -->
-    <script async defer 
-        src="https://maps.googleapis.com/maps/api/js?key=LA_TUA_API_KEY&callback=initMap">
-    </script>
-
-    <script>
-        // Funzione per inizializzare la mappa
-        function initMap() {
-            // Crea una nuova mappa centrata su una posizione specifica
-            const posizione = { lat: 41.9028, lng: 12.4964 }; // Roma, Italia
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 10,
-                center: posizione
-            });
-
-            // Aggiungi un marker alla mappa
-            const marker = new google.maps.Marker({
-                position: posizione,
-                map: map
-            });
-        }
-    </script>
+           
 </body>
 </html>
 
