@@ -1,285 +1,122 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav responsive</title>
+    <title>Pagina Web con Navbar</title>
     <style>
-        /* Navbar container */
-        .navbar {
+        /* Stili generali */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar superiore */
+        .navbar-top {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             background-color: #87CEEB;
-            color: #87CEEB;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
             z-index: 1000;
         }
 
-        /* Navbar container inner */
-        .navbar-container {
+        .navbar-top .logo {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 10px 20px;
-        }
-.navbar logo {
-    display: flex; 
-    align items: center;}
-        /* Navbar logo */
-        .navbar-logo a {
-            color: #fff;                           
-            font-size: 24px;                       
-            font-weight: bold;                    
-            text-decoration: none; 
-        }
-.navbar name{
-     color: #fff;                           
-            font-size: 18px;                       
-            font-weight: bold;                    
-            text-decoration: none; 
-          margin left: 20px;
-}
-            
-        /* Navbar toggle *
-        .navbar-toggle {
-            display: none;
-            cursor: pointer;
         }
 
-        .navbar-toggle span {
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: #fff;
-            margin: 5px 0;
+        .navbar-top .logo img {
+            width: 100px;
+            height: auto;
         }
 
-        /* Navbar menu */
-        .navbar-menu ul {
+        .navbar-top .name {
+            margin-left: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar-top .nav-links {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
             list-style: none;
             margin: 0;
             padding: 0;
         }
 
-        .navbar-menu li {
+        .navbar-top .nav-links li {
             margin-left: 20px;
         }
 
-        .navbar-menu a {
+        .navbar-top .nav-links a {
             color: #fff;
             text-decoration: none;
+            font-size: 16px;
         }
 
-        /* Section styling */
-        #chisono {
-            margin-top: 100px;
-            padding: 20px;
-            background-color: #ffffff;
+        .navbar-top .nav-links a:hover {
+            text-decoration: underline;
         }
 
-        #portfolio {
-            margin-top: 10px;
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #87CEEB;
-            color: #87CEEB;
-            text-align: center;
-            padding: 10px;
+        /* Navbar inferiore */
+        .navbar-bottom {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
+            background-color: #87CEEB;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
         }
 
-        /* Media queries */
-        @media (max-width: 768px) {
+        .navbar-bottom .copyright {
+            margin: 0;
+            font-size: 14px;
+        }
 
-            /* Navbar toggle */
-            .navbar-toggle {
-                display: block;
-            }
-
-            /* Navbar menu */
-            .navbar-menu {
-                display: none;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background-color: #333;
-                padding: 10px 20px;
-            }
-
-            .navbar-menu ul {
-                flex-direction: column;
-            }
-
-            .navbar-menu li {
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            .navbar-menu a {
-                font-size: 18px;
-            }
-
-            /* Navbar menu active */
-            .navbar-menu.active {
-                display: block;
-            }
+        /* Spazio per il contenuto della pagina */
+        .content {
+            margin-top: 60px; /* Altezza della navbar superiore */
+            margin-bottom: 40px; /* Altezza della navbar inferiore */
+            padding: 20px;
         }
     </style>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo">
-                <a href="#"><img src="logomio.png" width="100" alt="Logo"></a> 
-            </div> 
-            <div class="navbar name">
-                Claudia Rebasti
-            </div>
-            <div class="navbar-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="navbar-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Chi siamo</a></li>
-                    <li><a href="#">Servizi</a></li>
-                    <li><a href="#">Contatti</a></li>
-                </ul>
-            </div>
+    <!-- Navbar superiore -->
+    <nav class="navbar-top">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <div class="name">Claudia Rebasti</div>
         </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="chisiamo.html">Chi siamo</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
     </nav>
 
-    <div id="chisono">
-        CHI SONO
-       <div>
-    <img src="fotomia.jpg" style="width:100px;" alt="Foto di Claudia">
-
-</body> 
-    Ciao! sono Claudia Rebasti, prova sono di Novara e sono una Graphic Designer. Ho frequentato il liceo artistico di Novara in una scuola privata con l'indirizzo Grafica. Adesso sto facendo l'ACME di Novara. 
-
-    <div id="portfolio">
-        <div> PORTFOLIO
-            <div>
-            <img src="etichetta.jpg" style="width:100px;" alt="Etichetta della birra"> Progettazione dell'etichetta della birra, ho usato Indesign per realizzarla per metterla sulla bottiglia della birra 
-            
-        </div>
-        </div>
+    <!-- Contenuto della pagina -->
+    <div class="content">
+        <h1>Benvenuti nella nostra pagina</h1>
+        <p>Qui puoi inserire il contenuto della tua pagina.</p>
     </div>
-    <img src="kit.png" style="width:150px;" alt="kit per i bambini">
-    Progettazione kit per i bambini ho spiegato cosa servono le api per fare il miele, poi dove vanno d'inverno e quando sbucano fuori senza api non si vive sono importanti
-   </div>
-    <img src="manifesto.jpg" style="width:150px;" alt="manifesto della sensibilizzazione alla lettura">
-        Progettazione di un manifesto della salute, l'ho realizzato così perchè ho preso spunto dal pacchetto delle sigarette e ho fatto un'illustrazione
-  
-</div> CONTATTI
-    <div id="contatti">
-        <div id="CONTATTI">
-        <form name="contatti" method="POST" data-netlify="true">
-            <input type="hidden" name="subject" value="Nuovi dati ricevuti dalla form %{formName} (%{submissionId})" />
-            <!-- form group   -->
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control"
-                    placeholder="Inserisci il tuo nome: ci aiuterà a ricordarci come ti chiami">
-            </div>
-           
-</body>
-</html>
 
-            <!-- form group   -->
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control"
-                    placeholder="Inserisci la tua email: ci permetterà di risponderti">
-            </div>
-            <!-- form group   -->
-            <div class="form-group">
-                <label for="messaggio">Commento</label>
-                <textarea name="messaggio" id="messaggio" class="form-control"
-                    placeholder="Inserisci il motivo del tuo contatto"></textarea>
-            </div>
-            <br />
-            <div data-netlify-recaptcha="true"></div>
-            <br />
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Invia</button>
-            </div>
-        </form>
-    </div>
-        <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Mappa</title>
-    <style>
-        /* Aggiungi un po' di stile per la mappa */
-        #map {
-            height: 100vh; /* Rende la mappa a schermo intero */
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <h1>La Mia Mappa</h1>
-    <div id="map"></div>
-
-    <!-- Script per Google Maps API -->
-    <script async defer 
-        src="https://https://www.google.it/maps/place/Via+Costantino+Porta,+28100+Novara+NO">
-    </script>
-
-    <script>
-        // Funzione per inizializzare la mappa
-        function initMap() {
-            // Crea una nuova mappa centrata su una posizione specifica
-            const posizione = // Novara, Italia
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 10,
-                center: posizione
-            });
-
-            // Aggiungi un marker alla mappa
-            const marker = new google.maps.Marker({
-                position: posizione,
-                map: map
-            });
-        }
-    </script>
-</body>
-</html>
-
-
-    <footer>
-        <p>&copy; Nome Cognome E-mail Numero di telefono</p>
+    <!-- Navbar inferiore -->
+    <footer class="navbar-bottom">
+        <p class="copyright">&copy; <span id="year"></span> - Claudia Rebasti</p>
     </footer>
 
     <script>
-        // Navbar toggle
-        const navbarToggle = document.querySelector('.navbar-toggle');
-        const navbarMenu = document.querySelector('.navbar-menu');
-
-        navbarToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active');
-        });
+        // Aggiorna automaticamente l'anno nel footer
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
 </body>
-
 </html>
