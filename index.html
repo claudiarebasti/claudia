@@ -36,13 +36,18 @@
             font-weight: bold;                    
             text-decoration: none; 
         }
-.navbar logo p{
-    margin left: 15px;
-    color: #fff;
-    font size: 18px;
-    font weight: bold;}
-    
-        /* Navbar toggle */
+.navbar name{
+     color: #fff;                           
+            font-size: 18px;                       
+            font-weight: bold;                    
+            text-decoration: none; 
+          margin left: 20px;
+}
+        @media (max width: 768px) {
+            .navbar name {
+                display: none;
+            }}
+        /* Navbar toggle *
         .navbar-toggle {
             display: none;
             cursor: pointer;
@@ -143,8 +148,10 @@
         <div class="navbar-container">
             <div class="navbar-logo">
                 <a href="#"><img src="logomio.png" width="100" alt="Logo"></a> 
-                <p>Claudia Rebasti</p>
             </div> 
+            <div class="navbar name">
+                Claudia Rebasti
+            </div>
             <div class="navbar-toggle">
                 <span></span>
                 <span></span>
