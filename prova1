@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
             left: 0;
             width: 100%;
             background-color: #87CEEB;
-            color: #fff;
+            color: #87CEEB;
             z-index: 1000;
         }
 
@@ -28,18 +29,10 @@
 
         /* Navbar logo */
         .navbar-logo a {
-            color: #fff;
-            font-size: 24px;
-            font-weight: bold;
+            color: #fff;                           
+            font-size: 24px;                       
+            font-weight: bold;                    
             text-decoration: none;
-        }
-
-        /* Navbar name */
-        .navbar-name {
-            color: #fff;
-            font-size: 18px;
-            font-weight: normal;
-            margin-left: 20px;
         }
 
         /* Navbar toggle */
@@ -89,7 +82,7 @@
 
         footer {
             background-color: #87CEEB;
-            color: #fff;
+            color: #87CEEB;
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -100,6 +93,7 @@
 
         /* Media queries */
         @media (max-width: 768px) {
+
             /* Navbar toggle */
             .navbar-toggle {
                 display: block;
@@ -133,22 +127,17 @@
             .navbar-menu.active {
                 display: block;
             }
-
-            .navbar-name {
-                display: none; /* Nascondi il nome e cognome sui dispositivi mobili */
-            }
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="#"><img src="logomio.png" width="100" alt="Logo"></a>
-            </div>
-            <div class="navbar-name">
-                Nome e Cognome
-            </div>
+                <a href="#"><img src="logomio.png" width="100" alt="Logo"></a> 
+                <p>Claudia Rebasti</p>
+            </div> 
             <div class="navbar-toggle">
                 <span></span>
                 <span></span>
@@ -166,42 +155,53 @@
     </nav>
 
     <div id="chisono">
-        <h1>CHI SONO</h1>
-        <img src="fotomia.jpg" style="width:100px;" alt="Foto di Claudia">
-        <p>Ciao! sono Claudia Rebasti, prova sono di Novara e sono una Graphic Designer. Ho frequentato il liceo artistico di Novara in una scuola privata con l'indirizzo Grafica. Adesso sto facendo l'ACME di Novara.</p>
-    </div>
+        CHI SONO
+       <div>
+    <img src="fotomia.jpg" style="width:100px;" alt="Foto di Claudia">
+
+</body> 
+    Ciao! sono Claudia Rebasti, prova sono di Novara e sono una Graphic Designer. Ho frequentato il liceo artistico di Novara in una scuola privata con l'indirizzo Grafica. Adesso sto facendo l'ACME di Novara. 
 
     <div id="portfolio">
-        <h2>PORTFOLIO</h2>
-        <div>
-            <img src="etichetta.jpg" style="width:400px;" alt="Etichetta della birra">
-            <p>Progettazione dell'etichetta della birra, ho usato Indesign per realizzarla per metterla sulla bottiglia della birra.</p>
+        <div> PORTFOLIO
+            <div>
+            <img src="etichetta.jpg" style="width:100px;" alt="Etichetta della birra"> Progettazione dell'etichetta della birra, ho usato Indesign per realizzarla per metterla sulla bottiglia della birra 
+            
         </div>
-        <div>
-            <img src="kit.png" style="width:150px;" alt="kit per i bambini">
-            <p>Progettazione kit per i bambini ho spiegato cosa servono le api per fare il miele, poi dove vanno d'inverno e quando sbucano fuori senza api non si vive sono importanti.</p>
-        </div>
-        <div>
-            <img src="manifesto.jpg" style="width:150px;" alt="manifesto della sensibilizzazione alla lettura">
-            <p>Progettazione di un manifesto della salute, l'ho realizzato così perchè ho preso spunto dal pacchetto delle sigarette e ho fatto un'illustrazione.</p>
         </div>
     </div>
-
+    <img src="kit.png" style="width:150px;" alt="kit per i bambini">
+    Progettazione kit per i bambini ho spiegato cosa servono le api per fare il miele, poi dove vanno d'inverno e quando sbucano fuori senza api non si vive sono importanti
+   </div>
+    <img src="manifesto.jpg" style="width:150px;" alt="manifesto della sensibilizzazione alla lettura">
+        Progettazione di un manifesto della salute, l'ho realizzato così perchè ho preso spunto dal pacchetto delle sigarette e ho fatto un'illustrazione
+  
+</div> CONTATTI
     <div id="contatti">
-        <h2>CONTATTI</h2>
+        <div id="CONTATTI">
         <form name="contatti" method="POST" data-netlify="true">
             <input type="hidden" name="subject" value="Nuovi dati ricevuti dalla form %{formName} (%{submissionId})" />
+            <!-- form group   -->
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control" placeholder="Inserisci il tuo nome: ci aiuterà a ricordarci come ti chiami">
+                <input type="text" name="nome" id="nome" class="form-control"
+                    placeholder="Inserisci il tuo nome: ci aiuterà a ricordarci come ti chiami">
             </div>
+           
+</body>
+</html>
+
+            <!-- form group   -->
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Inserisci la tua email: ci permetterà di risponderti">
+                <input type="email" name="email" id="email" class="form-control"
+                    placeholder="Inserisci la tua email: ci permetterà di risponderti">
             </div>
+            <!-- form group   -->
             <div class="form-group">
                 <label for="messaggio">Commento</label>
-                <textarea name="messaggio" id="messaggio" class="form-control" placeholder="Inserisci il motivo del tuo contatto"></textarea>
+                <textarea name="messaggio" id="messaggio" class="form-control"
+                    placeholder="Inserisci il motivo del tuo contatto"></textarea>
             </div>
             <br />
             <div data-netlify-recaptcha="true"></div>
@@ -211,6 +211,49 @@
             </div>
         </form>
     </div>
+        <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Mappa</title>
+    <style>
+        /* Aggiungi un po' di stile per la mappa */
+        #map {
+            height: 100vh; /* Rende la mappa a schermo intero */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>La Mia Mappa</h1>
+    <div id="map"></div>
+
+    <!-- Script per Google Maps API -->
+    <script async defer 
+        src="https://https://www.google.it/maps/place/Via+Costantino+Porta,+28100+Novara+NO">
+    </script>
+
+    <script>
+        // Funzione per inizializzare la mappa
+        function initMap() {
+            // Crea una nuova mappa centrata su una posizione specifica
+            const posizione = // Novara, Italia
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: posizione
+            });
+
+            // Aggiungi un marker alla mappa
+            const marker = new google.maps.Marker({
+                position: posizione,
+                map: map
+            });
+        }
+    </script>
+</body>
+</html>
+
 
     <footer>
         <p>&copy; Nome Cognome E-mail Numero di telefono</p>
@@ -225,5 +268,7 @@
             navbarMenu.classList.toggle('active');
         });
     </script>
+
 </body>
+
 </html>
