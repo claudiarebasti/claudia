@@ -29,9 +29,9 @@
 
         /* Navbar logo */
         .navbar-logo a {
-            color: #fff;                           
-            font-size: 24px;                       
-            font-weight: bold;                    
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
             text-decoration: none;
         }
 
@@ -82,7 +82,7 @@
 
         footer {
             background-color: #87CEEB;
-            color: #87CEEB;
+            color: #fff;
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -93,7 +93,6 @@
 
         /* Media queries */
         @media (max-width: 768px) {
-
             /* Navbar toggle */
             .navbar-toggle {
                 display: block;
@@ -135,9 +134,9 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="#"><img src="logomio.png" width="100" alt="Logo"></a> 
+                <a href="#"><img src="logomio.png" width="100" alt="Logo"></a>
                 <p>Claudia Rebasti</p>
-            </div> 
+            </div>
             <div class="navbar-toggle">
                 <span></span>
                 <span></span>
@@ -155,53 +154,42 @@
     </nav>
 
     <div id="chisono">
-        CHI SONO
-       <div>
-    <img src="fotomia.jpg" style="width:100px;" alt="Foto di Claudia">
-
-</body> 
-    Ciao! sono Claudia Rebasti, prova sono di Novara e sono una Graphic Designer. Ho frequentato il liceo artistico di Novara in una scuola privata con l'indirizzo Grafica. Adesso sto facendo l'ACME di Novara. 
+        <h2>CHI SONO</h2>
+        <img src="fotomia.jpg" style="width:100px;" alt="Foto di Claudia">
+        <p>Ciao! Sono Claudia Rebasti, da Novara e sono una Graphic Designer. Ho frequentato il liceo artistico di Novara con indirizzo Grafica e attualmente studio all'ACME di Novara.</p>
+    </div>
 
     <div id="portfolio">
-        <div> PORTFOLIO
-            <div>
-            <img src="etichetta.jpg" style="width:100px;" alt="Etichetta della birra"> Progettazione dell'etichetta della birra, ho usato Indesign per realizzarla per metterla sulla bottiglia della birra 
-            
+        <h2>PORTFOLIO</h2>
+        <div>
+            <img src="etichetta.jpg" style="width:100px;" alt="Etichetta della birra">
+            <p>Progettazione dell'etichetta della birra, realizzata con InDesign per la bottiglia.</p>
         </div>
+        <div>
+            <img src="kit.png" style="width:150px;" alt="Kit per bambini">
+            <p>Progettazione di un kit per spiegare ai bambini l'importanza delle api nella produzione di miele.</p>
+        </div>
+        <div>
+            <img src="manifesto.jpg" style="width:150px;" alt="Manifesto sensibilizzazione alla lettura">
+            <p>Progettazione di un manifesto sulla sensibilizzazione alla lettura, ispirato ai pacchetti di sigarette.</p>
         </div>
     </div>
-    <img src="kit.png" style="width:150px;" alt="kit per i bambini">
-    Progettazione kit per i bambini ho spiegato cosa servono le api per fare il miele, poi dove vanno d'inverno e quando sbucano fuori senza api non si vive sono importanti
-   </div>
-    <img src="manifesto.jpg" style="width:150px;" alt="manifesto della sensibilizzazione alla lettura">
-        Progettazione di un manifesto della salute, l'ho realizzato così perchè ho preso spunto dal pacchetto delle sigarette e ho fatto un'illustrazione
-  
-</div> CONTATTI
+
     <div id="contatti">
-        <div id="CONTATTI">
+        <h2>CONTATTI</h2>
         <form name="contatti" method="POST" data-netlify="true">
             <input type="hidden" name="subject" value="Nuovi dati ricevuti dalla form %{formName} (%{submissionId})" />
-            <!-- form group   -->
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control"
-                    placeholder="Inserisci il tuo nome: ci aiuterà a ricordarci come ti chiami">
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Inserisci il tuo nome">
             </div>
-           
-</body>
-</html>
-
-            <!-- form group   -->
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control"
-                    placeholder="Inserisci la tua email: ci permetterà di risponderti">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Inserisci la tua email">
             </div>
-            <!-- form group   -->
             <div class="form-group">
                 <label for="messaggio">Commento</label>
-                <textarea name="messaggio" id="messaggio" class="form-control"
-                    placeholder="Inserisci il motivo del tuo contatto"></textarea>
+                <textarea name="messaggio" id="messaggio" class="form-control" placeholder="Inserisci il motivo del tuo contatto"></textarea>
             </div>
             <br />
             <div data-netlify-recaptcha="true"></div>
@@ -211,52 +199,32 @@
             </div>
         </form>
     </div>
-        <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Mappa</title>
-    <style>
-        /* Aggiungi un po' di stile per la mappa */
-        #map {
-            height: 100vh; /* Rende la mappa a schermo intero */
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <h1>La Mia Mappa</h1>
-    <div id="map"></div>
 
-    <!-- Script per Google Maps API -->
-    <script async defer 
-        src="https://https://www.google.it/maps/place/Via+Costantino+Porta,+28100+Novara+NO">
-    </script>
-
+    <div id="map" style="height: 300px;"></div>
+    
     <script>
         // Funzione per inizializzare la mappa
         function initMap() {
-            // Crea una nuova mappa centrata su una posizione specifica
-            const posizione = // Novara, Italia
+            const posizione = { lat: 45.4481, lng: 8.6211 }; // Coordinates for Novara, Italy
             const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 10,
                 center: posizione
             });
-
-            // Aggiungi un marker alla mappa
-            const marker = new google.maps.Marker({
+            new google.maps.Marker({
                 position: posizione,
                 map: map
             });
         }
-    </script>
-</body>
-</html>
 
+        // Load the map script asynchronously
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+        script.async = true;
+        document.head.appendChild(script);
+    </script>
 
     <footer>
-        <p>&copy; Nome Cognome E-mail Numero di telefono</p>
+        <p>&copy; Claudia Rebasti - Email: example@example.com - Tel: 1234567890</p>
     </footer>
 
     <script>
@@ -268,7 +236,6 @@
             navbarMenu.classList.toggle('active');
         });
     </script>
-
 </body>
 
 </html>
